@@ -1,0 +1,494 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+/* latin-ext */
+@font-face {
+    font-family: "Habibi";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyQxhfVOY.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Habibi";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyTRhf.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+    font-family: "Irish Grover";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*-------------------- CSS REST (Assuming this is CSS reset?---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+
+:root {
+    --green: #06a816;
+    --orange: #e75d02;
+    --black: #000000;
+    --white: #ffffff;
+    --black-opaque: rgba(0, 0, 0, 0.75);
+}
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+body {
+    font-family: "Habibi";
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Irish Grover";
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+nav {
+    padding-bottom: 1.5vw;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#nav-text {
+    background-color: var(--green);
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+#nav-text h1 {
+    text-shadow: 2px 2px 2px var(--black);
+    margin-bottom: 5vw;
+}
+
+#nav-text p {
+    font-style: italic;
+}
+
+#nav-link {
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid var(--white);
+    background-color: var(--orange);
+    margin-bottom: 5vw;
+    padding: 3vw 25vw;
+    border-radius: 7px;
+}
+
+main {
+    margin-top: 10vw;
+}
+
+#fruit {
+    padding: 1vw;
+}
+
+#vegetable {
+    padding: 1vw;
+}
+
+#fruit h2 {
+    margin-bottom: 3vw;
+}
+
+#vegetable h2 {
+    margin-bottom: 3vw;
+}
+
+#vegetable p {
+    padding: 1vw;
+    line-height: 1.5;
+}
+
+div {
+    margin-bottom: 5vw;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ul li {
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul li p {
+    position: relative;
+    bottom: 160px;
+    background-color: var(--black-opaque);
+    color: var(--white);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 2vw;
+}
+
+#Pre_Footer {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 4vw 0;
+    text-align: center;
+}
+
+#Pre_Footer h2 {
+    margin-bottom: 3vw;
+}
+
+#Pre_Footer p {
+    margin-bottom: 2vw;
+}
+
+#contact {
+    margin: 20vw;
+}
+
+#hour {
+    margin: 15vw;
+}
+
+footer {
+    color: var(--green);
+    text-align: center;
+    padding: 2vw 0;
+}
+
+#return {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--orange);
+    border: 2px var(--white) solid;
+    padding: 2vw;
+    border-radius: 7px;
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 428px) {
+    nav {
+        padding-bottom: 0;
+    }
+
+    #nav-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        text-align: left;
+        padding: 2vw 0;
+    }
+
+    #nav-text h1 {
+        margin-top: 5vw;
+        margin: auto 0;
+        margin-left: 2vw;
+    }
+
+    #nav-text p {
+        margin-top: 5vw;
+        margin: auto 0;
+    }
+
+    #nav-link {
+        text-align: center;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5vw;
+        column-gap: 12vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--white);
+        border: 2px solid var(--white);
+        background-color: var(--orange);
+        margin-bottom: 0;
+        padding: 1vw 10vw;
+        border-radius: 7px;
+    }
+
+    .left {
+        padding-left: 1vw;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    ul li p {
+        position: relative;
+        bottom: 160px;
+        background-color: var(--black-opaque);
+        color: var(--white);
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 1.5vw;
+    }
+
+    #Pre_Footer {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact {
+        margin: 6vw;
+    }
+
+    #hour {
+        margin: 6vw;
+    }
+}
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 834px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--green);
+        padding: 1vw 0;
+    }
+
+    #nav-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        text-align: left;
+        padding-left: 1vw;
+    }
+
+    #nav-text h1 {
+        margin-top: 5vw;
+        margin: auto 0;
+        margin-left: 0;
+        margin-bottom: 1vw;
+    }
+
+    #nav-text p {
+        margin-bottom: 1vw;
+    }
+
+    #nav-link {
+        text-align: center;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
+        margin-left: 10vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--white);
+        border: 2px solid var(--white);
+        background-color: var(--orange);
+        margin: auto 0;
+        padding: 0.5vw 5vw;
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    #fruit{
+        margin-top: -7vw;
+    }
+
+    #vegetable{
+        margin-top: -7vw;
+    }
+
+    #fruit h2 {
+        margin-bottom: 1vw;
+    }
+    
+    #vegetable h2 {
+        margin-bottom: 1vw;
+    }
+
+    div{
+        margin-bottom: 3vw;
+    }
+    
+    .left {
+        padding-left: .5vw;
+        line-height: 1.5vw;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
