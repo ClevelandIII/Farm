@@ -461,34 +461,211 @@ footer {
         text-align: center;
     }
 
-    #fruit{
+    #fruit {
         margin-top: -7vw;
     }
 
-    #vegetable{
+    #vegetable {
         margin-top: -7vw;
     }
 
     #fruit h2 {
         margin-bottom: 1vw;
     }
-    
+
     #vegetable h2 {
         margin-bottom: 1vw;
     }
 
-    div{
+    div {
         margin-bottom: 3vw;
     }
-    
+
     .left {
-        padding-left: .5vw;
-        line-height: 1.5vw;
+        padding-left: 0.5vw;
+        line-height: 1.5;
     }
 
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    #Pre_Footer {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #Pre_Footer p {
+        line-height: 1;
+        margin-bottom: 0;
+        margin-top: 1vw;
+    }
+
+    #Pre_Footer div {
+        margin-bottom: 1vw;
+    }
+
+    #contact,
+    #hour {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+
+    #contact h2,
+    #hour h2 {
+        margin-top: 2vw;
+    }
+
+    #return {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: var(--orange);
+        border: 2px var(--white) solid;
+        padding: 1vw;
+        border-radius: 7px;
+    }
 }
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width: 1280px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--green);
+        padding: 1vw 0;
+    }
+
+    #nav-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        text-align: left;
+        padding-left: 1vw;
+    }
+
+    #nav-text h1 {
+        margin-top: 5vw;
+        margin: auto 0;
+        margin-left: 0;
+        margin-bottom: 1vw;
+    }
+
+    #nav-text p {
+        margin-bottom: 1vw;
+    }
+
+    #nav-link {
+        text-align: center;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5vw;
+        margin-left: 10vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--white);
+        border: 2px solid var(--white);
+        background-color: var(--orange);
+        margin: auto 0;
+        padding: 0.5vw 5vw;
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    #fruit {
+        margin-top: -7vw;
+        margin-bottom: 1.5vw;
+    }
+
+    #vegetable {
+        margin-top: -7vw;
+        margin-bottom: -1.5vw;
+    }
+
+    #fruit h2 {
+        margin-bottom: 1vw;
+    }
+
+    #vegetable h2 {
+        margin-bottom: 1vw;
+    }
+
+    div {
+        margin-bottom: 3vw;
+    }
+
+    .left {
+        padding-left: 0.5vw;
+        line-height: 1.5;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    ul li p {
+        position: relative;
+        bottom: 160px;
+        background-color: var(--black-opaque);
+        color: var(--white);
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 1vw;
+    }
+
+    #Pre_Footer {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #Pre_Footer p {
+        line-height: 1;
+        margin-bottom: 0;
+        margin-top: 1vw;
+    }
+
+    #Pre_Footer div {
+        margin-bottom: 1vw;
+    }
+
+    #contact,
+    #hour {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+
+    #contact h2,
+    #hour h2 {
+        margin-top: 2vw;
+    }
+
+    footer {
+        padding: 1vw 0;
+    }
+
+    #return {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: var(--orange);
+        border: 2px var(--white) solid;
+        padding: 1vw;
+        border-radius: 7px;
+    }
+}
